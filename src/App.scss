@@ -38,4 +38,37 @@ background-color: aliceblue;
 nav {
     @extend .strip;
     background-color: lightgreen;
+    align-items: center;
+    display: flex;
+
+    &.row {
+        flex-direction: column;
+    }
+
+    > * {
+        margin-bottom: 0;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin-left: 20px;
+    }
+
+    p {
+        font-size: 30px;
+    }
 }
+
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }

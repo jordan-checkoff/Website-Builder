@@ -31,6 +31,34 @@ p {
 
 nav {
   background-color: lightgreen;
+  align-items: center;
+  display: flex;
+}
+nav.row {
+  flex-direction: column;
+}
+nav > * {
+  margin-bottom: 0;
+}
+nav ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+nav li {
+  display: inline-block;
+  margin-left: 20px;
+}
+nav p {
+  font-size: 30px;
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 /*# sourceMappingURL=App.css.map */
