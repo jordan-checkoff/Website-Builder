@@ -2,15 +2,15 @@ const Navbar = (props) => {
 
     const styles = {
         nav: {
-            justifyContent: (props.spread == 'separate') ? 'space-between'
-                            : (props.spread == 'left') ? 'flex-start'
-                            : (props.spread == 'center') ? 'space-around' : 'space-between',
+            justifyContent: (props.spread === 'separate') ? 'space-between'
+                            : (props.spread === 'left') ? 'flex-start'
+                            : (props.spread === 'center') ? 'space-around' : 'space-between',
             flexDirecton: "row",
         }
     }
 
     return (
-        <nav style={styles.nav} className={props.spread == 'center' ? "row" : '' }>
+        <nav style={styles.nav} className={props.spread === 'center' ? "row" : '' }>
             <p>
                 <span className={props.logo ? 'sr-only' : ''}>{props.name}</span>
                 {props.logo ? <img src={props.logo} /> : ''}
