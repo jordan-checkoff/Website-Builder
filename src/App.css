@@ -1,30 +1,22 @@
-:root {
-  --font1: "Helvetica";
-  --font2: "Times New Roman";
-  --textcolor: #111111;
-  --color1: lightblue;
-  --color2: lightgreen;
-}
-
 * {
   box-sizing: border-box;
   margin-top: 0;
 }
 
-h1,h2,h3,h4,h5,h6,p {
-  color: var(--textcolor);
+h1, h2, h3, h4, h5, h6, p {
+  color: #111111;
 }
 
 h1 {
-  font-family: var(--font1);
+  font-family: "Helvetica";
 }
 
 h2 {
-  font-family: var(--font2);
+  font-family: "Times New Roman";
 }
 
 p {
-  font-family: var(--font2);
+  font-family: "Times New Roman";
   line-height: 1.2;
   font-size: 16px;
 }
@@ -32,3 +24,13 @@ p {
 .App {
   background-color: aliceblue;
 }
+
+.strip, nav {
+  padding: 20px;
+}
+
+nav {
+  background-color: lightgreen;
+}
+
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,41 @@
+$font1: "Helvetica";
+$font2: "Times New Roman";
+$textcolor: #111111;
+$color1: lightblue;
+$color2: lightgreen;
+
+* {
+    box-sizing: border-box;
+    margin-top: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    color: $textcolor;
+}
+
+h1 {
+font-family: $font1;
+}
+
+h2 {
+font-family: $font2;
+}
+
+p {
+font-family: $font2;
+line-height: 1.2;
+font-size: 16px;
+}
+
+.App {
+background-color: aliceblue;
+}
+
+.strip {
+    padding: 20px;
+}
+
+nav {
+    @extend .strip;
+    background-color: lightgreen;
+}
