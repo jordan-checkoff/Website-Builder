@@ -33,6 +33,7 @@ nav {
   background-color: lightgreen;
   align-items: center;
   display: flex;
+  font-family: "Helvetica";
 }
 nav.row {
   flex-direction: column;
@@ -44,12 +45,23 @@ nav ul {
   list-style-type: none;
   padding-left: 0;
 }
-nav li {
+nav a {
   display: inline-block;
   margin-left: 20px;
+  text-decoration: none;
 }
-nav p {
-  font-size: 30px;
+nav a:visited {
+  color: black;
+}
+nav a:hover {
+  color: green;
+}
+nav p.logo {
+  font-size: 36px;
+  font-family: Georgia;
+}
+nav img.logo {
+  width: 300px;
 }
 
 .sr-only {

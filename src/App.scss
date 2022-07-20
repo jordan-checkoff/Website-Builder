@@ -1,8 +1,20 @@
+// FONTS
 $font1: "Helvetica";
 $font2: "Times New Roman";
+
+// COLORS
 $textcolor: #111111;
 $color1: lightblue;
 $color2: lightgreen;
+
+// HEADER
+$imageLogoSize: 300px;
+$textLogoSize: 36px;
+$textLogoFont: Georgia;
+$navspacing: 20px;
+$navFont: $font1;
+$navColor: black;
+$navHoverColor: green;
 
 * {
     box-sizing: border-box;
@@ -40,6 +52,7 @@ nav {
     background-color: lightgreen;
     align-items: center;
     display: flex;
+    font-family: $navFont;
 
     &.row {
         flex-direction: column;
@@ -54,13 +67,25 @@ nav {
         padding-left: 0;
     }
 
-    li {
+    a {
         display: inline-block;
-        margin-left: 20px;
+        margin-left: $navspacing;
+        text-decoration: none;
+        &:visited {
+            color: $navColor;
+        }
+        &:hover {
+            color: $navHoverColor;
+        }
     }
 
-    p {
-        font-size: 30px;
+    p.logo {
+        font-size: $textLogoSize;
+        font-family: $textLogoFont;
+    }
+
+    img.logo {
+        width: $imageLogoSize;
     }
 }
 
