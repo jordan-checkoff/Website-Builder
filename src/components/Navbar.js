@@ -1,21 +1,13 @@
 import React from 'react';
+import Logo from './Logo';
+import Menu from './Menu';
 
 const Navbar = (props) => {
 
-    const styles = {
-        nav: {
-            justifyContent: (props.spread === 'separate') ? 'space-between'
-                            : (props.spread === 'left') ? 'flex-start'
-                            : (props.spread === 'center') ? 'space-around' : 'space-between',
-        }
-    }
-
     return (
-        <nav style={styles.nav} className={props.spread === 'center' ? "row" : null }>
-            {React.Children.map(props.children, (child) => {
-                return React.cloneElement(child, {navType: props.spread});
-            }
-          )}
+        <nav className="navbar">
+            <Logo img={props.logo} name={props.name} />
+            <Menu pages={props.pages} />
         </nav>
     )
 }

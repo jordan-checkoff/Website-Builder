@@ -18,7 +18,7 @@ $navHoverColor: green;
 
 * {
     box-sizing: border-box;
-    margin-top: 0;
+    margin: 0;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -47,31 +47,83 @@ background-color: aliceblue;
     padding: 20px;
 }
 
-nav {
+
+.header {
     @extend .strip;
     background-color: lightgreen;
     align-items: center;
-    display: flex;
-    font-family: $navFont;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+}
 
-    &.row {
+.headerthree {
+    @extend .header;
+    & > :nth-child(2) {
+        text-align: center;
+    }
+    & > :nth-child(3) {
+        display: flex;
         flex-direction: column;
+        align-items: flex-end;
     }
 
-    > * {
-        margin-bottom: 0;
+}
+
+.headersep {
+    @extend .header;
+    grid-template-columns: 1fr auto;
+    & > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
     }
+}
+
+.headercen {
+    @extend .header;
+    & > :first-child {
+        grid-column-start: 2;
+        text-align: center;
+    }
+}
+
+.group {
+    display: flex;
+    gap: 20px;
+}
+
+.grouprow {
+    @extend .group;
+    flex-direction: row;
+}
+
+.groupcol {
+    @extend .group;
+    flex-direction: column;
+}
+
+#textlogo {
+    font-size: $textLogoSize;
+    font-family: $textLogoFont;
+}
+
+#imglogo {
+    width: $imageLogoSize;
+}
+
+nav {
+    font-family: $navFont;
 
     ul {
         list-style-type: none;
+        display: flex;
         padding-left: 0;
+        gap: 20px;
     }
 
     a {
-        display: inline-block;
-        margin-left: $navspacing;
         text-decoration: none;
-        &:visited {
+        &:visited, &:link {
             color: $navColor;
         }
         &:hover {
@@ -79,13 +131,9 @@ nav {
         }
     }
 
-    p.logo {
-        font-size: $textLogoSize;
-        font-family: $textLogoFont;
-    }
-
-    img.logo {
-        width: $imageLogoSize;
+    &.navbar {
+        padding: 10px;
+        background-color: gray;
     }
 }
 

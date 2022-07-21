@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  margin-top: 0;
+  margin: 0;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -25,43 +25,83 @@ p {
   background-color: aliceblue;
 }
 
-.strip, nav {
+.strip, .header, .headercen, .headersep, .headerthree {
   padding: 20px;
 }
 
-nav {
+.header, .headercen, .headersep, .headerthree {
   background-color: lightgreen;
   align-items: center;
-  display: flex;
-  font-family: "Helvetica";
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
 }
-nav.row {
+
+.headerthree > :nth-child(2) {
+  text-align: center;
+}
+.headerthree > :nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.headersep {
+  grid-template-columns: 1fr auto;
+}
+.headersep > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.headercen > :first-child {
+  grid-column-start: 2;
+  text-align: center;
+}
+
+.group, .groupcol, .grouprow {
+  display: flex;
+  gap: 20px;
+}
+
+.grouprow {
+  flex-direction: row;
+}
+
+.groupcol {
   flex-direction: column;
 }
-nav > * {
-  margin-bottom: 0;
+
+#textlogo {
+  font-size: 36px;
+  font-family: Georgia;
+}
+
+#imglogo {
+  width: 300px;
+}
+
+nav {
+  font-family: "Helvetica";
 }
 nav ul {
   list-style-type: none;
+  display: flex;
   padding-left: 0;
+  gap: 20px;
 }
 nav a {
-  display: inline-block;
-  margin-left: 20px;
   text-decoration: none;
 }
-nav a:visited {
+nav a:visited, nav a:link {
   color: black;
 }
 nav a:hover {
   color: green;
 }
-nav p.logo {
-  font-size: 36px;
-  font-family: Georgia;
-}
-nav img.logo {
-  width: 300px;
+nav.navbar {
+  padding: 10px;
+  background-color: gray;
 }
 
 .sr-only {

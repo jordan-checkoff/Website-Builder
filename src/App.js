@@ -1,7 +1,7 @@
 import './App.css';
-import Navbar from './components/Navbar';
-import Logo from './components/Logo';
+import Header from './components/Header';
 import Menu from './components/Menu';
+import Logo from './components/Logo';
 
 const name = "Checkoff Design";
 
@@ -12,6 +12,9 @@ const pages = [{
             {
               name: "Wikipedia",
               link: "http://www.wikipedia.com"
+            }, {
+              name: "Facebook",
+              link: "http://www.facebook.com"
             }]
 
 const logo = "https://common.northwestern.edu/v8/css/images/northwestern.svg";
@@ -19,12 +22,17 @@ const logo = "https://common.northwestern.edu/v8/css/images/northwestern.svg";
 function App() {
   return (
     <div className="App">
-      <header>
-        <Navbar links={pages} spread={"separate"} >
-          <Logo img={logo} />
+      
+      <Header name={name} logo={logo} pages={pages} type={""} navbar={false}>
+        <Logo>Name</Logo>
+        <div>
           <Menu pages={pages} />
-        </Navbar>
-      </header>
+          <p>Test</p>
+        </div>
+        {/* <p>a</p> */}
+        {/* <p>a</p> */}
+      </Header>
+
       <div className={'strip'}>
       <h1>My h1</h1>
       <p>My pfjaslk;dfjlkasdjfklasdjf kld;sfj aksdjf; My pfjaslk;dfjlkasdjfklasdjf kld;sfj aksdjf;My pfjaslk;dfjlkasdjfklasdjf 
