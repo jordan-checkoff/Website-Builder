@@ -4,23 +4,33 @@ import {Children} from 'react';
 const Header = (props) => {
     let children = props.children;
     let num = Children.count(children);
-    let type = props.type;
+    let align = props.align;
 
-    const getClass = (num, type) => {
-        if (num === 1 && type === "center") {
-            return 'headercen';
-        } else if (num === 2 && type === "left") {
-            return "headerleft";
-        } else if (num === 3) {
-            return "headerthree";
+    const getClass = (num, align) => {
+        if (num == 1) {
+            if (align == "left") {
+                return 'header';
+            } else if (align == "right") {
+                return 'headerright';
+            } else {
+                return "headerleft"
+            }            
+        } else if (num == 2) {
+            if (align == "left") {
+                return 'header';
+            } else if (align == "right") {
+                return "headerleft";
+            } else {
+                return "headerright";
+            }
         } else {
-            return 'headersep';
+            return 'header';
         }
     }
 
     return (
         <div>
-            <div className={getClass(num, type)}>
+            <div className={getClass(num, align)}>
                 {children}
             </div>
             {props.navbar ? <Navbar pages={props.pages} /> : null}

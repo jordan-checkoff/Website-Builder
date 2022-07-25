@@ -1,9 +1,11 @@
+import {pages} from '../UserData';
+
 const Menu = (props) => {
 
     return (
         <nav>
-            <ul style={props.styles}>
-                {props.pages.map((page) => <a key={page.name} href={page.link}><li>{page.name}</li></a>)}
+            <ul>
+                {pages.map((page) => <a key={page.name} href={page.link}><li>{page.name}</li></a>)}
             </ul>
         </nav>
     )

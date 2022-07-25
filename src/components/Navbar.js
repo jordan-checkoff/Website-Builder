@@ -6,8 +6,7 @@ const Navbar = (props) => {
 
     return (
         <nav className="navbar">
-            <Logo img={props.logo} name={props.name} />
-            <Menu pages={props.pages} />
+            <Menu />
         </nav>
     )
 }
