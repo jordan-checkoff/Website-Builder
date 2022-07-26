@@ -1,3 +1,4 @@
+import React from 'react';
 import {pages} from '../UserData';
 
 const Menu = (props) => {
