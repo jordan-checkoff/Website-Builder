@@ -8,6 +8,7 @@ import Strip from './components/Strip';
 import Row from './components/Row';
 import Col from './components/Col';
 import Image from './components/Image';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -66,7 +67,12 @@ function App() {
             <p>Tracy B</p>
           </Col>
         </Row>
-      </Strip>
+        </Strip>
+
+        <Footer thin={true}>
+            <p>&copy; 2022 by Newtown Personal Fitness</p>
+            <p>215.200.7907</p>
+        </Footer>
 
       </div>
   );

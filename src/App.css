@@ -126,6 +126,10 @@ nav.navbar {
   justify-content: center;
 }
 
+footer > div.headerleft, footer > div.headerright, footer > div.headercen {
+  background-color: rgb(249, 202, 109);
+}
+
 .center {
   text-align: center;
   display: flex;

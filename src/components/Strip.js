@@ -13,9 +13,15 @@ const Strip = (props) => {
         return className;
     }
 
+    const styles = {
+        "row": {
+            backgroundColor: props.bg ? props.bg : "transparent"
+        }
+    }
+
 
     return (
-        <div className={getClassName()}>
+        <div className={getClassName()} style={styles.row}>
             {props.children}
         </div>
     )

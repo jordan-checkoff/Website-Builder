@@ -1,8 +1,7 @@
 import React from 'react';
-import Navbar from './Navbar';
 import {Children} from 'react';
 
-const Header = (props) => {
+const Footer = (props) => {
     let children = props.children;
     let num = Children.count(children);
     let spacing = props.spacing;
@@ -41,13 +40,12 @@ const Header = (props) => {
     }
 
     return (
-        <header>
+        <footer>
             <div className={getClass(num, spacing, align)}>
                 {children}
             </div>
-            {props.navbar ? <Navbar pages={props.pages} /> : null}
-        </header>
+        </footer>
     )
 }
 
-export default Header;
+export default Footer;

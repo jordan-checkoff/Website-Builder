@@ -8,6 +8,7 @@ $color1: lightblue;
 $color2: lightgreen;
 
 $background: white;
+$footerColor: rgb(249, 202, 109);
 
 // HEADER
 $headerColor: white;
@@ -167,6 +168,10 @@ nav {
         align-items: center;
         justify-content: center;
     }
+}
+
+footer > div.headerleft, footer > div.headerright, footer > div.headercen {
+    background-color: $footerColor;
 }
 
 .center {
