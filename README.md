@@ -12,13 +12,17 @@ To begin using this website builder, just download the code and open it in a tex
 
 ## How to Use
 ### Step 1: Create Header
-First, open `src/UserData.js`. Change the `name` variable to your website's name, the `logo` variable to the link to your logo if applicable, and the 'pages' variable to a list of the pages on your website. Next, open `src/sections/Header.js`, and add all the components you want within `<HeadFootMaker>`. There are several components specifically useful for headers: `<Logo>` and `<Menu>`. The components will automatically line up in a row, so to form a column of components, just wrap those components in a `<div>` tag. Finally, apply any specifications to the `<HeadFooter>` component.
+First, open `src/UserData.js`. Change the `name` variable to your website's name, the `logo` variable to the link to your logo, and the 'pages' variable to a list of the pages on your website. If you do not have a logo, set the variable to an empty string. Next, open `src/sections/Header.js`, and add all the components you want within `<HeadFootMaker>`. There are several components specifically useful for headers: `<Logo>` and `<Menu>`. The components will automatically line up in a row, so to form a column of components, just wrap those components in a `<div>` tag. Finally, apply any specifications to the `<HeadFooter>` component.
 
 ## Documentation
 ### HeadFootMaker
-**Description:** `<HeadFootMaker>` is used to make a customized header easily and quickly. It offers several spacing options, as well as the option to add a navbar.
-**Parameters**
-spacing={"center" | "left" | "right"} - sets horizontal spacing of components
-align={"center" | "top" | "bottom"} - sets vertical spacing of components
-navbar={false | true} - adds a navbar
-width={"thin" | "wide"} - sets the width of the header
+**Description:** `<HeadFootMaker>` is used to make a customized header or footer easily and quickly. It offers several spacing options, as well as the option to add a navbar.
+
+**Parameters:**
+- spacing={"center" | "left" | "right"} - sets horizontal spacing of components
+- align={"center" | "top" | "bottom"} - sets vertical spacing of components
+- navbar={false | true} - adds a navbar
+- width={"thin" | "wide"} - sets the width of the header
+
+### Logo
+**Description:** `<Logo>` is used for either text or image logos. By default, 
