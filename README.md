@@ -16,8 +16,9 @@ First, open `src/UserData.js`. Change the `name` variable to your website's name
 
 ## Documentation
 ### HeadFootMaker
-**Description:** 
-spacing ("center" | "left" | "right")
-align=("center" | "top" | "bottom"}
-navbar={false|true}
-width=("thin" | "wide")
+**Description:** `<HeadFootMaker>` is used to make a customized header easily and quickly. It offers several spacing options, as well as the option to add a navbar.
+**Parameters**
+spacing={"center" | "left" | "right"} - sets horizontal spacing of components
+align={"center" | "top" | "bottom"} - sets vertical spacing of components
+navbar={false | true} - adds a navbar
+width={"thin" | "wide"} - sets the width of the header
