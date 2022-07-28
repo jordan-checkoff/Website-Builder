@@ -2,11 +2,11 @@ export const name = "NEWTOWN PERSONAL TRAINING";
 
 export const pages = [{
     name: "Home",
-    link: "http://www.google.com"
+    link: "/"
     },
   {
     name: "About",
-    link: "http://www.wikipedia.com"
+    link: "/about"
   }, {
     name: "Services",
     link: "http://www.facebook.com"

@@ -1,8 +1,9 @@
-import React from 'react';
-import Navbar from './Navbar';
-import {Children} from 'react';
+import React, {Children} from "react";
+import Navbar from "./Navbar";
 
-const Header = (props) => {
+
+const HeadFootMaker = (props) => {
+
     let children = props.children;
     let num = Children.count(children);
     let spacing = props.spacing;
@@ -12,22 +13,22 @@ const Header = (props) => {
         let myClass = ''
         if (num === 1) {
             if (spacing === "left") {
-                myClass += 'headerdef';
+                myClass += 'headfootdef';
             } else if (spacing === "right") {
-                myClass += 'headerright';
+                myClass += 'headfootright';
             } else {
-                myClass += "headerleft"
+                myClass += "headfootleft"
             }            
         } else if (num === 2) {
             if (spacing === "left") {
-                myClass += 'headerdef';
+                myClass += 'headfootdef';
             } else if (spacing === "right") {
-                myClass += "headerleft";
+                myClass += "headfootleft";
             } else {
-                myClass += "headerright";
+                myClass += "headfootright";
             }
         } else {
-            myClass += 'headerdef';
+            myClass += 'headfootdef';
         }
         if (align === 'top') {
             myClass += ' top'
@@ -35,19 +36,21 @@ const Header = (props) => {
             myClass += ' bottom'
         }
 
-        myClass += props.thin ? ' thin' : null;
+        if (props.thin) {
+            myClass += ' thin';
+        }
 
         return myClass;
     }
 
     return (
-        <header>
+        <div>
             <div className={getClass(num, spacing, align)}>
                 {children}
             </div>
-            {props.navbar ? <Navbar pages={props.pages} /> : null}
-        </header>
+            {props.navbar ? <Navbar /> : null}
+        </div>
     )
 }
 
-export default Header;
+export default HeadFootMaker;
