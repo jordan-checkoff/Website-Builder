@@ -46,10 +46,6 @@ font-size: 16px;
     &.wide {
         padding: 20px 0;
     }
-
-    & > * {
-        margin-bottom: 20px;
-    }
 }
 
 .colLayout {
@@ -86,6 +82,10 @@ footer {
 
     &.bottom {
         align-items: flex-end;
+    }
+
+    & > div > :not(:last-child) {
+        margin-bottom: 10px;
     }
 }
 

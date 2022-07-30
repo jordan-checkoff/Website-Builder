@@ -4,7 +4,7 @@ const Image = (props) => {
     let size = props.size;
 
     const getSize = () => {
-        if (size == 'icon') {
+        if (size === 'icon') {
             return 50;
         } else {
             return 'auto';
@@ -14,11 +14,12 @@ const Image = (props) => {
     const styles = {
         'image': {
             width: getSize(),
+            maxWidth: '100%'
         }
     }
 
     return (
-        <img src={props.file} style={styles.image}/>
+        <img src={props.file} style={styles.image} alt={"alt text"} />
     )
 }
 

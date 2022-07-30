@@ -42,9 +42,6 @@ p {
 .strip.wide, .wide.headfootleft, .wide.headfootright, .wide.headfootdef {
   padding: 20px 0;
 }
-.strip > *, .headfootleft > *, .headfootright > *, .headfootdef > * {
-  margin-bottom: 20px;
-}
 
 .colLayout {
   display: grid;
@@ -75,6 +72,9 @@ footer {
 }
 .bottom.headfootleft, .bottom.headfootright, .bottom.headfootdef {
   align-items: flex-end;
+}
+.headfootleft > div > :not(:last-child), .headfootright > div > :not(:last-child), .headfootdef > div > :not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .headfootdef > :nth-child(3) {

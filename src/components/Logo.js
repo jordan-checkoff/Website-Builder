@@ -5,8 +5,8 @@ const Logo = (props) => {
     return (
 
         <div>
-            {props.logo ? <img alt="logo" src={logo} id='imglogo' /> : null}
-            <p id='textlogo' className={props.logo ? "sr-only" : null}>{props.children ? props.children : name}</p>
+            {logo ? <img alt="logo" src={logo} id='imglogo' /> : null}
+            <p id='textlogo' className={logo ? "sr-only" : null}>{name}</p>
         </div>
     )
 }

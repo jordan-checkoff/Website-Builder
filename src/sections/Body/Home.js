@@ -1,8 +1,8 @@
 import React from 'react';
-import {Banner, Strip, Image} from '../components.js';
-import ColLayout from '../components/ColLayout.js';
+import {Banner, Strip, Image} from '../../components.js';
+import ColLayout from '../../components/ColLayout.js';
 
-function Body() {
+function Home() {
   return (
     <div className="App">
 
@@ -15,6 +15,18 @@ function Body() {
           <p>Sheri Katz-Schnur of Newtown, Bucks County PA is a certified personal trainer with expertise in creating engaging and effective in-home workouts requiring little to no equipment. Whether your goal is weight loss, muscle gain, increased flexibility, or overall fitness, we will develop an individualized fitness program to help you reach your goals in the most convenient and comfortable setting for you.</p>
       </Strip>
 
+      <Strip width="wide" center={true}>
+        <ColLayout bg={["rgb(246, 237, 206)", "rgb(254, 203, 99)"]}>
+          <div>
+            <h2>YOUR BODY, YOUR GOALS</h2>
+            <p>We all want to feel stronger, healthier, and more energetic so we can do the things that bring us joy. We believe these goals are doable for anyone with a plan and someone to guide them. All you need to bring is a willingness to work!</p>
+          </div>
+          <div>
+            <h2>MY PROMISE</h2>
+            <p>We will start our journey where you are today, creating a plan that works with your lifestyle and for your lifetime. Whatever your goals, whether you’re looking to tone up or to gain flexibility, whether you want to lose weight, just feel stronger and more confident, or all of the above, I'll help you get there, with attention to your unique needs.</p>
+          </div>
+        </ColLayout>
+      </Strip>
 
       <Strip center={true}>
             <h2>FEEDBACK</h2>
@@ -37,4 +49,4 @@ function Body() {
   );
 }
 
-export default Body;
+export default Home;

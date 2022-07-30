@@ -1,8 +1,9 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./sections/Layout";
-import Body from "./sections/Body";
-import About from './sections/About'
+import Home from "./sections/Body/Home";
+import About from './sections/Body/About'
+import Services from './sections/Body/Services';
 
 const App = () => {
     return (
@@ -10,10 +11,9 @@ const App = () => {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Layout />}>
-              <Route index element={<Body />} />
+              <Route index element={<Home />} />
               <Route path="about" element={<About />} />
-              {/* <Route path="contact" element={<Contact />} />
-              <Route path="*" element={<NoPage />} /> */}
+              <Route path="services" element={<Services />} />
             </Route>
           </Routes>
         </BrowserRouter>
