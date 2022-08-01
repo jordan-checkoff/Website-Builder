@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/website-builder/static/css/main.953078ff.css",
+    "main.js": "/website-builder/static/js/main.b790f9c7.js",
+    "index.html": "/website-builder/index.html",
+    "main.953078ff.css.map": "/website-builder/static/css/main.953078ff.css.map",
+    "main.b790f9c7.js.map": "/website-builder/static/js/main.b790f9c7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.953078ff.css",
+    "static/js/main.b790f9c7.js"
+  ]
+}
