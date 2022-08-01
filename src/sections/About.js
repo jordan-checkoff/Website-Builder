@@ -1,6 +1,6 @@
 import React from 'react';
-import {Banner, Strip, Image} from '../../components.js';
-import ColLayout from '../../components/ColLayout.js';
+import {Banner, Strip, Image} from '../components.js';
+import ColLayout from '../components/ColLayout.js';
 
 function Home() {
   return (

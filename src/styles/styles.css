@@ -42,6 +42,9 @@ p {
 .strip.wide, .wide.headfootleft, .wide.headfootright, .wide.headfootdef {
   padding: 20px 0;
 }
+.strip > *, .headfootleft > *, .headfootright > *, .headfootdef > * {
+  margin-bottom: 20px;
+}
 
 .colLayout {
   display: grid;

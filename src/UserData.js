@@ -1,17 +1,24 @@
+import Home from "./sections/Home";
+import About from './sections/About'
+import Services from './sections/Services';
+
 export const name = "Your Website Title";
 
 export const logo = "https://placeholder.co/wp-content/uploads/2020/02/PlaceHolder-Logo-blk-1.png"
 
 export const pages = [{
     name: "Home",
-    link: "/"
+    link: "/",
+    component: <Home />
     },
   {
     name: "About",
-    link: "/about"
+    link: "/about",
+    component: <About />
   }, {
     name: "Services",
-    link: "/services"
+    link: "/services",
+    component: <Services />
   }
   ]
 

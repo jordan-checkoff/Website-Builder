@@ -1,8 +1,6 @@
-import React, {Children} from "react";
+import React from "react";
 
 const Strip = (props) => {
-
-    let children = props.children;
 
     const getClassName = () => {
         let className = "strip";
@@ -18,7 +16,6 @@ const Strip = (props) => {
     const styles = {
         "strip": {
             backgroundColor: props.bg ? props.bg : "transparent",
-            gridTemplateColumns: `repeat(${Children.count(children)}, 1fr)`
         }
     }
 

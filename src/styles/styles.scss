@@ -46,6 +46,10 @@ font-size: 16px;
     &.wide {
         padding: 20px 0;
     }
+
+    & > * {
+        margin-bottom: 20px;
+    }
 }
 
 .colLayout {

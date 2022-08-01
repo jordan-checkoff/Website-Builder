@@ -1,23 +1,22 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./sections/Layout";
-import Home from "./sections/Body/Home";
-import About from './sections/Body/About'
-import Services from './sections/Body/Services';
+import { Routes, Route } from "react-router-dom";
+import Header from "./sections/Header";
+import Footer from "./sections/Footer";
+import { pages } from "./UserData";
 
 const App = () => {
     return (
-        <React.StrictMode>
-        <BrowserRouter>
+      <>
+
+          <Header />
+
           <Routes>
-            <Route path="/" element={<Layout />}>
-              <Route index element={<Home />} />
-              <Route path="about" element={<About />} />
-              <Route path="services" element={<Services />} />
-            </Route>
+            {pages.map((page) => <Route index path={page.link} element={page.component} />)}
           </Routes>
-        </BrowserRouter>
-      </React.StrictMode>
+
+          <Footer />
+      
+      </>
     )
 }
 
