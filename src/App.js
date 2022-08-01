@@ -11,7 +11,7 @@ const App = () => {
           <Header />
 
           <Routes>
-            {pages.map((page) => <Route index path={page.link} element={page.component} />)}
+            {pages.map((page) => <Route key={page.name} index path={page.link} element={page.component} />)}
           </Routes>
 
           <Footer />

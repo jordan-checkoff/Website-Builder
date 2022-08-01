@@ -1,6 +1,5 @@
 import React from 'react';
-import HeadFootMaker from '../components/HeadFootMaker';
-import { Logo, Menu } from '../components';
+import { Logo, HeadFootMaker } from '../myComponents';
 
 const Header = () => {
 

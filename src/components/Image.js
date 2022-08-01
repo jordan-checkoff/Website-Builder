@@ -6,6 +6,12 @@ const Image = (props) => {
     const getSize = () => {
         if (size === 'icon') {
             return 50;
+        } else if (size === 'small') {
+            return 150;
+        } else if (size === "medium") {
+            return 300;
+        } else if (size === "large") {
+            return 400;
         } else {
             return 'auto';
         }
@@ -14,7 +20,7 @@ const Image = (props) => {
     const styles = {
         'image': {
             width: getSize(),
-            maxWidth: '100%'
+            maxWidth: '100%',
         }
     }
 

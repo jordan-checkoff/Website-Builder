@@ -1,51 +1,53 @@
 import React from 'react';
-import {Banner, Strip, Image} from '../components.js';
-import ColLayout from '../components/ColLayout.js';
+import {Banner, Strip, Image, ColLayout} from '../myComponents.js';
 
 const Page = () => {
   return (
     <div className="App">
 
-      <Banner num={0} height={450} />
+      <Banner num={0} height={200}><h1>Website Builder</h1></Banner>
 
-      <Strip center={true}>
-          <h1>GET FIT TODAY</h1>
-          <p>WITH NEWTOWN PERSONAL FITNESS TRAINING</p>
-          <p>No judgment. No strict diets. No arbitrary rules.</p>
-          <p>Sheri Katz-Schnur of Newtown, Bucks County PA is a certified personal trainer with expertise in creating engaging and effective in-home workouts requiring little to no equipment. Whether your goal is weight loss, muscle gain, increased flexibility, or overall fitness, we will develop an individualized fitness program to help you reach your goals in the most convenient and comfortable setting for you.</p>
+      <Strip>
+          <ColLayout>
+            <div>
+              <h3>Column 1</h3>
+              <Image size="small" file={"https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png"} />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div>
+              <h3>Column 2</h3>
+              <Image size="small" file={"https://cdn4.iconfinder.com/data/icons/social-media-logos-6/512/121-css3-512.png"} />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div>
+              <h3>Column 3</h3>
+              <Image size="small" file={"https://www.seekpng.com/png/full/80-803501_javascript-logo-logo-de-java-script-png.png"} />
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+          </ColLayout>
       </Strip>
 
-      <Strip width="wide" center={true}>
-        <ColLayout bg={["rgb(246, 237, 206)", "rgb(254, 203, 99)"]}>
+      <Strip bg="lightpink">
+          <ColLayout>
+            <div>
+              <h3>This strip stands out</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            {/* <Image size="small" file={"https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/640px-HTML5_logo_and_wordmark.svg.png"} /> */}
+          </ColLayout>
+      </Strip>
+
+      <Strip>
+        <ColLayout>
           <div>
-            <h2>YOUR BODY, YOUR GOALS</h2>
-            <p>We all want to feel stronger, healthier, and more energetic so we can do the things that bring us joy. We believe these goals are doable for anyone with a plan and someone to guide them. All you need to bring is a willingness to work!</p>
+            <h2>This is another thin strip</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-          <div>
-            <h2>MY PROMISE</h2>
-            <p>We will start our journey where you are today, creating a plan that works with your lifestyle and for your lifetime. Whatever your goals, whether you’re looking to tone up or to gain flexibility, whether you want to lose weight, just feel stronger and more confident, or all of the above, I'll help you get there, with attention to your unique needs.</p>
-          </div>
+          <Image size="large" file={"https://www.freepnglogos.com/uploads/html5-logo-png/html5-logo-devextreme-multi-purpose-controls-html-javascript-3.png"} />
         </ColLayout>
       </Strip>
 
-      <Strip center={true}>
-            <h2>FEEDBACK</h2>
-            <p>Real Experiences, Stunning Results</p>
-            <ColLayout>
-              <div>
-                <Image file={"https://www.freeiconspng.com/thumbs/quotation-icon/quotation-icon-20.png"} size="icon" />
-                <p>Sheri is a great personal trainer. I never thought I would look forward to working out but I do, and it is because of her. She knows her stuff! She understands my limits and she knows when I can be pushed. I began with Sheri when I was almost a size 14 and now I am an 8! It is all thanks to her. We work out hard but we also discuss eating habits. She has truly turned my life around!</p>
-                <p>Kim Q</p>
-              </div>
-              <div>
-                <Image file={"https://www.freeiconspng.com/thumbs/quotation-icon/quotation-icon-20.png"} size="icon" />
-                <p>Sheri Katz has changed my life. She took someone who hated to exercise (and was very lazy about it) and turned her into someone who exercises on a regular basis. The positive effect of her workouts was almost immediate. Even before the weight started coming off, I had more energy and endurance in my everyday life. Her sixth sense is amazing –she will push me to get results, yet she can sense when I have reached my limit without me saying a word.</p>
-                <p>Tracy B</p>
-              </div>
-            </ColLayout>
-        </Strip>
-
-      </div>
+    </div>
   );
 }
 

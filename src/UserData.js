@@ -1,6 +1,5 @@
 import Home from "./sections/Home";
 import About from './sections/About'
-import Services from './sections/Services';
 
 export const name = "Your Website Title";
 
@@ -15,12 +14,8 @@ export const pages = [{
     name: "About",
     link: "/about",
     component: <About />
-  }, {
-    name: "Services",
-    link: "/services",
-    component: <Services />
   }
   ]
 
-export const banners = ["https://static.wixstatic.com/media/e74aeb_1bd0e5b55724421d9d2050db554a6ca7~mv2.jpeg/v1/fill/w_1440,h_450,al_c,q_85,enc_auto/e74aeb_1bd0e5b55724421d9d2050db554a6ca7~mv2.jpeg",
-  "http://usb-medical.com/wp-content/uploads/2019/10/Photo-2.2-HV-Retractor-Illustration-Turning-the-Knob.jpg"]
+export const banners = ["https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/12/Gradient_builder_2.jpg?auto=format&q=60&w=1815&h=1200&fit=crop&crop=faces",
+  "https://img.freepik.com/free-vector/vibrant-summer-ombre-background-vector_53876-105765.jpg"]

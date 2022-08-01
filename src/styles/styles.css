@@ -50,8 +50,11 @@ p {
   display: grid;
   justify-items: center;
 }
-.colLayout > * {
+.colLayout > div > * {
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .colLayout > * > * > * {
   margin-bottom: 20px;
