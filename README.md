@@ -11,8 +11,42 @@ To solve this problem, I developed this website builder using React. It is an ea
 To begin using this website builder, just download the code and open it in a text editor. Then, navigate to the folder in the command-line and run `$ npm start`.
 
 ## How to Use
-### Step 1: Create Header
-First, open `src/UserData.js`. Change the `name` variable to your website's name, the `logo` variable to the link to your logo, and the 'pages' variable to a list of the pages on your website. If you do not have a logo, set the variable to an empty string. Next, open `src/sections/Header.js`, and add all the components you want within `<HeadFootMaker>`. There are several components specifically useful for headers: `<Logo>` and `<Menu>`. The components will automatically line up in a row, so to form a column of components, just wrap those components in a `<div>` tag. Finally, apply any specifications to the `<HeadFooter>` component.
+### Step 1: Create pages
+For each webpage you would like on your site (other than the home page):
+- Duplicate "Home.js"
+- Rename the file to give it a unique name
+
+### Step 2: Set variables in UserData.js
+- Open "src/UserData.js"
+- For each new page you created, import it below the import for "Home". Import it using `import [page name] from ./sections/[page name]`
+- Change the `name` variable to your website's name
+- If you want to use a logo in your website, set the `logo` variable to the link to your logo; otherwise, set it to an empty string
+- Set the `pages` variable to a list of the pages on your website. Each item in the list should be `{name: "[page name]", link: "[path]", component: [imported page component]`}
+- If you would like banners for your website (see [Banner](#banner)) set the `banner` variable to a list of links to the images. This step can be returned to later
+
+### Step 3: Edit Header
+- Open `src/sections/Header.js`
+- Add all the components you want within `<HeadFootMaker>` (see [HeadFootMaker](#headfootmaker))
+
+Notes:
+- Children will automatically line up in a row, so to form a column of components, just wrap those components in a `<div>` tag.
+- There are several components that make it easier to make headers (see [Logo](#logo) and [Menu](#menu))
+
+### Step 4: Edit Footer
+- Open `src/sections/Header.js`
+- Add all the components you want within `<HeadFootMaker>` (see [HeadFootMaker](#headfootmaker))
+
+Notes:
+- Children will automatically line up in a row, so to form a column of components, just wrap those components in a `<div>` tag.
+
+### Step 5: Edit Pages
+For each page:
+- Open the respective file
+- Add all the components you want within the top-most `<div>`
+
+Notes:
+- The page should be grouped into `<Strip>` components (see [Strip](#strip))
+- There are several components that make it easier to make pages (see [Banner](#banner) and [ColLayout](#collayout))
 
 ## Documentation
 ### Strip
@@ -32,7 +66,7 @@ First, open `src/UserData.js`. Change the `name` variable to your website's name
 - bg={["transparent"] | [...colors]} - sets background-color of each column
 
 ### HeadFootMaker
-**Description:** `<HeadFootMaker>` is used to make a customized header or footer easily and quickly. It offers several spacing options, as well as the option to add a navbar.
+**Description:** `<HeadFootMaker>` is used to make a customized header or footer easily and quickly. It offers several spacing options, as well as the option to add a navbar. Children will automatically line up in a row, so to form a column of components, just wrap those components in a `<div>` tag.
 
 **Parameters:**
 - spacing={"center" | "left" | "right"} - sets horizontal spacing of components
