@@ -48,6 +48,10 @@ Notes:
 - The page should be grouped into `<Strip>` components (see [Strip](#strip))
 - There are several components that make it easier to make pages (see [Banner](#banner) and [ColLayout](#collayout))
 
+### Step 6: Edit Styles
+- Open `src/styles/_vars.scss`
+- Edit any of the variables to set the styles for your webpage
+
 ## Documentation
 ### Strip
 **Description:** `<Strip>` is a grouping component used for creating each section of the page.
@@ -89,3 +93,13 @@ Notes:
 
 ### Menu
 **Description** `<Menu`> is used for creating a navigation menu. It automatically generates a menu based off of the pages listed in UserData.js.
+
+### Image
+**Description:** `<Image>` is used to add an image.
+- size={"auto" | "icon" | "small" | "medium" | "large"}
+
+**Parameters:**
+- num={0 | num} - specifies image
+- height={400 | px} - sets height
+- top={"center" | pos} - sets vertical position of text
+- left={"center" | pos} - sets horizontal position of text
