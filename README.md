@@ -99,7 +99,4 @@ Notes:
 - size={"auto" | "icon" | "small" | "medium" | "large"}
 
 **Parameters:**
-- num={0 | num} - specifies image
-- height={400 | px} - sets height
-- top={"center" | pos} - sets vertical position of text
-- left={"center" | pos} - sets horizontal position of text
+- size={"auto" | "icon" | "small" | "medium" | "large"}
