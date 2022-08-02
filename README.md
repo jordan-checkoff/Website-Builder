@@ -8,7 +8,7 @@ Bootstrap is a helpful tool for reducing the repetitiveness of website-building.
 To solve this problem, I developed this website builder using React. It is an easy-to-use website template that contains many helpful components for speeding up website-building. With this website builder, the majority of a website can be built just using the included React components and HTML; only some additional CSS is required to finish the design. Each components has several parameters for modifying its design, so very little custom CSS is required. Also, some components automatically adjust based off of the number of children they have.
 
 ## Installation
-To begin using this website builder, just download the code and open it in a text editor. Then, navigate to the folder in the command-line and run `$ npm start`.
+To begin using this website builder, first create a react app using `$ create new-react app [app-name]`. Then download the code from this repository and move it into the folder of your react app to replace the default files.
 
 ## How to Use
 ### Step 1: Create pages
