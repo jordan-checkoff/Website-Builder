@@ -1,6 +1,6 @@
 # Website Builder
 
-See it live here.
+See it live [here](https://jordan-checkoff.github.io/Website-Builder/).
 
 ## Description
 Bootstrap is a helpful tool for reducing the repetitiveness of website-building. However, Bootstrap components are bulky and hard to read – they are divs within divs within divs. Also, there is still a lot of repetitiveness that Bootstrap does not reduce, like menus that each must be updated one-by-one when a new page is added. 
